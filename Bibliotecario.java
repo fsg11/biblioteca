@@ -10,7 +10,6 @@ public class Bibliotecario extends Persona {
         this.prestamosRealizados = 0;
     }
 
-    // Getters
     public double getSalario() {
         return salario;
     }
@@ -19,7 +18,6 @@ public class Bibliotecario extends Persona {
         return prestamosRealizados;
     }
 
-    // Setters
     public void setSalario(double salario) {
         this.salario = salario;
     }
