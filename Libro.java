@@ -19,7 +19,6 @@ public class Libro {
         this.unidadesDisponibles = unidadesDisponibles;
     }
 
-    // Getters y Setters
     public String getCodigo() {
         return codigo;
     }
