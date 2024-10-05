@@ -13,19 +13,16 @@ public class Biblioteca {
         bibliotecarios.add(b);
     }
 
-    // Crear Estudiante
     public void crearEstudiante(String nombre, String cedula, String telefono, String correo) {
         Estudiante e = new Estudiante(nombre, cedula, telefono, correo);
         estudiantes.add(e);
     }
 
-    // Crear Libro
     public void crearLibro(String codigo, String titulo, int unidadesDisponibles) {
         Libro l = new Libro(codigo, titulo, unidadesDisponibles);
         libros.add(l);
     }
 
-    // Crear Préstamo
     public void crearPrestamo(Estudiante estudiante, Bibliotecario bibliotecario, Libro libro) {
         if (libro.prestar()) {
             Prestamo p = new Prestamo(estudiante, bibliotecario);
@@ -38,7 +35,6 @@ public class Biblioteca {
         }
     }
 
-    // Consultar préstamos de un libro
     public void consultarPrestamosPorLibro(String titulo) {
         for (Libro libro : libros) {
             if (libro.getTitulo().equalsIgnoreCase(titulo)) {
